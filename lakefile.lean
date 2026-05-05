@@ -31,8 +31,8 @@ package imo where
 lean_lib Imo where
   globs := #[.submodules `Imo]
 
-require "google-deepmind" / "formal_conjectures"
-
+require formal_conjectures from git
+  "https://github.com/google-deepmind/formal-conjectures.git" @ "bump_v4.28.0"
 
 lean_exe extract_subjects where
   root := `ExtractSubjects
