@@ -29,7 +29,7 @@ package imo where
 
 @[default_target]
 lean_lib Imo where
-  globs := #[.submodules `Imo]
+  globs := #[.andSubmodules `Imo]
 
 require formal_conjectures from git
   "https://github.com/google-deepmind/formal-conjectures.git" @ "bump_v4.28.0"
